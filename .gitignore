@@ -1,0 +1,9 @@
+coverage*
+dist
+node_modules
+vscode*
+.cleanmodules
+.DS_Store
+.eslintcache
+.nyc_output
+.pnpm-debug.log
