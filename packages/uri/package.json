@@ -1,0 +1,30 @@
+{
+  "name": "@sanitise/uri",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "🧼 Sanitise a URI to mitigate XSS and malformed URIs",
+  "license": "UNLICENSED",
+  "repository": "openbasehq/sanitise",
+  "author": "Andrew Powell <andrew@shellscape.org>",
+  "homepage": "https://github.com/openbasehq/sanitise#readme",
+  "bugs": "https://github.com/openbasehq/sanitise/issues",
+  "main": "dist/index",
+  "engines": {
+    "node": ">=14.15.3"
+  },
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "coverage": "nyc pnpm run test && nyc report --reporter=text-lcov > coverage.lcov",
+    "preparee": "if [ ! -d 'dist' ]; then pnpm build; fi",
+    "prerelease": "pnpm build",
+    "pretest": "pnpm build",
+    "release": "pnpm package:release --workspace-root -- $npm_package_name",
+    "test": "ava"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
