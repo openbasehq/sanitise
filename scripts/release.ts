@@ -8,7 +8,7 @@ import parser from 'conventional-commits-parser';
 import chalk from 'chalk';
 import execa from 'execa';
 import semver from 'semver';
-import { writePackage } from 'write-pkg';
+import writePackage from 'write-pkg';
 import yargs from 'yargs-parser';
 
 const { log } = console;
@@ -163,7 +163,7 @@ const tag = async (cwd: string, shortName: string, version: string) => {
 const updateChangelog = (commits: Commit[], cwd: string, shortName: string, version: string) => {
   log(chalk`{blue Gathering Changes}`);
 
-  const title = `# @openbaseio/${shortName} ChangeLog`;
+  const title = `# @openbasehq/${shortName} ChangeLog`;
   const [date] = new Date().toISOString().split('T');
   const logPath = join(cwd, 'CHANGELOG.md');
   const logFile = existsSync(logPath) ? readFileSync(logPath, 'utf-8') : '';
