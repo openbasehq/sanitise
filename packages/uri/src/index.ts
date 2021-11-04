@@ -1,12 +1,12 @@
 interface SanitiseUriOptions {
-  invalidUri?: any;
+  invalidUri?: string | null;
 }
 
 // eslint-disable-next-line no-control-regex
 const reControlChars = /[\u0000-\u001F\u007F-\u009F\u2000-\u200D\uFEFF]/gi;
 const reInvalid = /^([^\w]*)(javascript|data|vbscript)/im;
 const reUri = /^([^:]+):/gm;
-const defaults = {
+const defaults: SanitiseUriOptions = {
   invalidUri: void 0
 };
 
