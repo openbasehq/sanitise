@@ -5,7 +5,7 @@ import getStream from 'get-stream';
 
 export const sanitise = (html?: string | null) => {
   if (typeof html === 'undefined') return Promise.resolve(html);
-  if (html === null) return Promise.resolve('null');
+  if (html === null) return Promise.resolve(null);
 
   const stream = new Readable();
   const parser = new Parser({
