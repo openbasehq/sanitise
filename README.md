@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="170" src="https://raw.githubusercontent.com/openbasehq/sanitise/master/assets/base.svg?token=AAASUU2YAKVAYK7WUJ57ERTBNHR52" /><br/><br/>
+  <img width="170" src="https://raw.githubusercontent.com/openbasehq/sanitise/master/assets/base.svg?token=AAASUU65AV2HYYNZ4C4Z233BQW3L6" /><br/><br/>
 </div>
 
 [![openbase](https://img.shields.io/badge/view%20on-openbase-blue)](https://openbase.com/search?q=%2540sanitise)

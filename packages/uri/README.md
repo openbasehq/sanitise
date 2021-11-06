@@ -2,7 +2,7 @@
 [size-url]: https://packagephobia.now.sh/result?p=@sanitise/html
 
 <div align="center">
-  <img width="170" src="https://raw.githubusercontent.com/openbasehq/sanitise/master/assets/uri.svg?token=AAASUUZBZKJXXRDFGY6VTHTBNHP5E" /><br/><br/>
+  <img width="170" src="https://raw.githubusercontent.com/openbasehq/sanitise/master/assets/uri.svg?token=AAASUUZZYZ5OSMPVF3LCARLBQW3O6" /><br/><br/>
 </div>
 
 [![size][size]][size-url]

@@ -47,9 +47,10 @@ jobs:
 
       - name: Set Git User and Remote
         run: |
-          git config --global user.email "cosmo@openbase.io"
-          git config --global user.name "cosmo-baseman"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
+          git config pull.rebase false
+          git config --global user.email "release-workflow@openbase.io"
+          git config --global user.name "Release Workflow"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
       - name: pnpm install
         run: pnpm install
